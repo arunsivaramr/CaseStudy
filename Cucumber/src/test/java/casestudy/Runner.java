@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(tags="@login,@search")
+@CucumberOptions(monochrome=true,plugin= {"pretty","json:cucumber.json"},tags= {"@login,@search"})
 public class Runner {
 	
 }
